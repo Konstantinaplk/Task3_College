@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.6" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="Student" id="Student0">
+    <void property="course">
+     <object class="Course" id="Course0">
+      <void property="cohort">
+       <object class="java.lang.Enum" id="Cohort0" method="valueOf">
+        <class>Cohort</class>
+        <string>SEPT_2019_JUN_2020</string>
+       </object>
+      </void>
+      <void property="location">
+       <string>code.hub</string>
+      </void>
+      <void property="name">
+       <string>Maths</string>
+      </void>
+     </object>
+    </void>
+    <void property="markModules">
+     <void method="add">
+      <object class="MarkModule">
+       <void property="achievedMarks">
+        <object class="java.util.ArrayList"/>
+       </void>
+       <void property="module">
+        <object class="Module">
+         <void property="assignedTutor">
+          <string>Bob</string>
+         </void>
+         <void property="course">
+          <object idref="Course0"/>
+         </void>
+         <void property="moduletype">
+          <object class="java.lang.Enum" id="ModuleType0" method="valueOf">
+           <class>ModuleType</class>
+           <string>MANDATORY</string>
+          </object>
+         </void>
+         <void property="name">
+          <string>algebra</string>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Student" id="Student1">
+    <void property="course">
+     <object class="Course">
+      <void property="cohort">
+       <object idref="Cohort0"/>
+      </void>
+      <void property="location">
+       <string>code.hub</string>
+      </void>
+      <void property="name">
+       <string>ComputerS</string>
+      </void>
+     </object>
+    </void>
+    <void property="markModules">
+     <void method="add">
+      <object class="MarkModule">
+       <void property="achievedMarks">
+        <object class="java.util.ArrayList"/>
+       </void>
+       <void property="module">
+        <object class="Module">
+         <void property="assignedTutor">
+          <string>Bob</string>
+         </void>
+         <void property="course">
+          <object idref="Course0"/>
+         </void>
+         <void property="moduletype">
+          <object idref="ModuleType0"/>
+         </void>
+         <void property="name">
+          <string>java</string>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
